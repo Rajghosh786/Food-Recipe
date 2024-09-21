@@ -40,7 +40,7 @@ import UserContextProvider from './components/context/UserContextProvider.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-      <Route path='/Food-recipe' element={<Layout/>}>
+      <Route path='/' element={<Layout/>}>
         <Route path='' element={<Home/>}/>
         <Route path='fullrecipe/:id' element={<FullRecipe/>}/>
         <Route path='favourites' element={<Favourites/>}/>
