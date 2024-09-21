@@ -16,17 +16,17 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <UserContextProvider>
       <HashRouter>
-        <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />
+          <Route path='/' element={<Layout/>}>
+            <Route path="" element={<Home />} />
             <Route path="fullrecipe/:id" element={<FullRecipe />} />
             <Route path="favourites" element={<Favourites />} />
             <Route path="contact" element={<Contact />} />
             <Route path="about" element={<About />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
+          </Route>
           </Routes>
-        </Layout>
       </HashRouter>
     </UserContextProvider>
   </StrictMode>
